@@ -1,19 +1,4 @@
-# Detektor - Object change tracker for .NET
-
-
-## Supported platforms
-* .NET 6
-
-## Getting started
-Detektor can be installed using the NuGet package manager or the `dotnet` CLI.
-
-```
-dotnet add package Detektor
-```
-
-## Example
-```csharp
-using Detektor;
+﻿using Detektor;
 
 var user = new User("Johnny", "Cage");
 
@@ -48,6 +33,3 @@ class User: IChangeTrackable<User>
     public IChangeTracker<User> StartChangeTracking() =>
         new ChangeTrackerBuilder<User>().Build(this);
 }
-
-```
-
