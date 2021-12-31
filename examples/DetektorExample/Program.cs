@@ -19,8 +19,8 @@ foreach (var change in changes)
     Console.WriteLine($"NewValue: {change.Value.NewValue}");
 }
 
-class User: IChangeTrackable<User>
-{ 
+class User : IChangeTrackable<User>
+{
     public string FirstName { get; set; }
     public string LastName { get; set; }
 
